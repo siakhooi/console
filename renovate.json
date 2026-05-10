@@ -1,0 +1,29 @@
+{
+  "extends": ["config:base"],
+  "dependencyDashboard": false,
+  "assignees": ["siakhooi"],
+  "reviewers": ["siakhooi"],
+  "dockerfile": {
+    "enabled": false
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": [
+        "ARG JQ_VERSION=(?<currentValue>[0-9.]+)"
+      ],
+      "depNameTemplate": "jqlang/jq",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["Dockerfile"],
+      "matchStrings": [
+        "ARG YQ_VERSION=(?<currentValue>[0-9.]+)"
+      ],
+      "depNameTemplate": "mikefarah/yq",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
