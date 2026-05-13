@@ -4,7 +4,7 @@ docker image to troubleshoot docker services in a docker network
 ## Tools available
 - curl, wget
 - iputils-ping, netcat-openbsd
-- mariadb-client, kafkacat, cqlsh, mongodb-mongosh
+- mariadb-client, kafkacat, cqlsh, mongodb-mongosh, postgresql-client
 
 ## Deliverables
 - https://hub.docker.com/r/siakhooi/console

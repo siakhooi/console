@@ -17,6 +17,7 @@ RUN apt update \
         curl wget gnupg \
         iputils-ping \
         mariadb-client \
+        postgresql-client \
         default-jdk \
         python3-venv \
         kafkacat \
