@@ -16,6 +16,7 @@ RUN apt update \
  && apt install -y --no-install-recommends \
         curl wget gnupg \
         iputils-ping \
+        bind9-dnsutils \
         mariadb-client \
         postgresql-client \
         default-jdk \
