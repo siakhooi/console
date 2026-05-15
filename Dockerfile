@@ -19,6 +19,7 @@ RUN apt update \
         bind9-dnsutils \
         mariadb-client \
         postgresql-client \
+        redis-tools \
         default-jdk \
         python3-venv \
         kafkacat \
